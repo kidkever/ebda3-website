@@ -5,6 +5,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <title>ابداع تك</title>
+
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -12,9 +14,37 @@
       integrity="sha384-3Wg4cUtDziGc50xL4PCr98iap+jlvY2rTTsQU5F2vcf+KROJydycFaCjmlZVA1oG"
       crossorigin="anonymous"
     />
+
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+
+    <!-- Custom Styles -->
     <link rel="stylesheet" href="assets/css/style.css" />
 
-    <title>ابداع تك</title>
+    <!-- js files -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="assets/js/owl.carousel.min.js" defer></script>
+    <script src="assets/js/script.js" defer></script>
   </head>
   <body>
     <!-- navbar -->
@@ -55,12 +85,14 @@
 
     <!-- header -->
     <header>
-      <div class="row">
-        <div class="col-lg-5 hero-img my-auto">
-          <img src="assets/images/header.jpg" alt="" />
-        </div>
-        <div class="col-lg-7 hero-bg">
-          <h1>ابداع تك..شريكك التقنى الأمثل لبدأ مشروعك الأن</h1>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-5 hero-img my-auto p-4">
+            <img src="assets/images/header.jpg" alt="" />
+          </div>
+          <div class="col-lg-7 hero-bg">
+            <h1>ابداع تك..شريكك التقنى الأمثل لبدأ مشروعك الأن</h1>
+          </div>
         </div>
       </div>
     </header>
@@ -93,35 +125,64 @@
     <!-- services section -->
     <section id="services">
       <h2 class="text-center pb-4">ما نقدمه لكم</h2>
-      <div class="services-bg d-flex align-items-center">
+      <div class="services-bg d-flex align-items-center py-5">
         <div class="container">
           <div class="row">
-            <div class="card col-lg-4">
-              <img src="assets/images/training.png" alt="تسويق الكترونى" />
-              <h3>التدريب</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-                molestias facilis, quo doloremque nisi libero?
-              </p>
-            </div>
-            <div class="card col-lg-4">
-              <img
-                src="assets/images/social-markting.png"
-                alt="تسويق الكترونى"
-              />
-              <h3>التسويق الالكترونى</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-                molestias facilis, quo doloremque nisi libero?
-              </p>
-            </div>
-            <div class="card col-lg-4">
-              <img src="assets/images/cashier.png" alt="تسويق الكترونى" />
-              <h3>البرامج المحاسبية و الادارية</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-                molestias facilis, quo doloremque nisi libero?
-              </p>
+            <div class="owl-carousel owl-theme services-carousel">
+              <div class="card item">
+                <img src="assets/images/training.png" alt="تسويق الكترونى" />
+                <h3>التدريب</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                  molestias facilis, quo doloremque nisi libero?
+                </p>
+              </div>
+              <div class="card item">
+                <img
+                  src="assets/images/social-markting.png"
+                  alt="تسويق الكترونى"
+                />
+                <h3>التسويق الالكترونى</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                  molestias facilis, quo doloremque nisi libero?
+                </p>
+              </div>
+              <div class="card item">
+                <img src="assets/images/cashier.png" alt="تسويق الكترونى" />
+                <h3>البرامج المحاسبية و الادارية</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                  molestias facilis, quo doloremque nisi libero?
+                </p>
+              </div>
+              <div class="card item">
+                <img src="assets/images/training.png" alt="تسويق الكترونى" />
+                <h3>التدريب</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                  molestias facilis, quo doloremque nisi libero?
+                </p>
+              </div>
+              <div class="card item">
+                <img
+                  src="assets/images/social-markting.png"
+                  alt="تسويق الكترونى"
+                />
+                <h3>التسويق الالكترونى</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                  molestias facilis, quo doloremque nisi libero?
+                </p>
+              </div>
+              <div class="card item">
+                <img src="assets/images/cashier.png" alt="تسويق الكترونى" />
+                <h3>البرامج المحاسبية و الادارية</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                  molestias facilis, quo doloremque nisi libero?
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -129,12 +190,211 @@
     </section>
     <!-- end services section -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
-      crossorigin="anonymous"
-    ></script>
-    <script src="assets/js/script.js"></script>
+    <!-- our-work section -->
+    <section id="our-work">
+      <h2 class="text-center pb-4">بعض أعمالنا</h2>
+      <div class="our-work-bg py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="card">
+                <img src="assets/images/blood-bank.jpg" alt="تطبيق بنك الدم" />
+                <h3>تطبيق بنك الدم</h3>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="card">
+                <img src="assets/images/mansor.jpg" alt="تطبيق منصور للذبائح" />
+                <h3>تطبيق منصور للذبائح</h3>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="card">
+                <img src="assets/images/elnesr-mockup.jpg" alt="موقع النسر" />
+                <h3>موقع النسر</h3>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="card">
+                <img src="assets/images/smart.jpg" alt="تطبيق اكتشفنى" />
+                <h3>تطبيق اكتشفنى</h3>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="card">
+                <img src="assets/images/sushi.jpg" alt="تطبيق سوشى" />
+                <h3>تطبيق سوشى</h3>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="card">
+                <img src="assets/images/one-preview.jpg" alt="تطبيق وان" />
+                <h3>تطبيق وان</h3>
+              </div>
+            </div>
+          </div>
+          <button class="btn d-block mx-auto my-3">شاهد كل اعمالنا</button>
+        </div>
+      </div>
+    </section>
+    <!-- end our-work section -->
+
+    <!-- articles section -->
+    <section id="articles">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 d-flex justify-content-center mb-4">
+            <div class="card">
+              <img src="assets/images/web.jpg" alt="تطبيق بنك الدم" />
+              <p>
+                ناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                سيلهي القارئ.
+              </p>
+              <div
+                class="
+                  d-flex
+                  justify-content-between
+                  align-content-center align
+                "
+              >
+                <button class="btn">اقرأ الأن</button>
+                <span class="mt-1"
+                  >200
+                  <i class="fas fa-eye"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 d-flex justify-content-center mb-4">
+            <div class="card">
+              <img src="assets/images/MICROsoft.jpg" alt="تطبيق بنك الدم" />
+              <p>
+                ناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                سيلهي القارئ.
+              </p>
+              <div
+                class="
+                  d-flex
+                  justify-content-between
+                  align-content-center align
+                "
+              >
+                <button class="btn">اقرأ الأن</button>
+                <span class="mt-1"
+                  >200
+                  <i class="fas fa-eye"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 d-flex justify-content-center mb-4">
+            <div class="card">
+              <img src="assets/images/web.jpg" alt="تطبيق بنك الدم" />
+              <p>
+                ناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                سيلهي القارئ.
+              </p>
+              <div
+                class="
+                  d-flex
+                  justify-content-between
+                  align-content-center align
+                "
+              >
+                <button class="btn">اقرأ الأن</button>
+                <span class="mt-1"
+                  >200
+                  <i class="fas fa-eye"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 d-flex justify-content-center mb-4">
+            <div class="card">
+              <img src="assets/images/MICROsoft.jpg" alt="تطبيق بنك الدم" />
+              <p>
+                ناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                سيلهي القارئ.
+              </p>
+              <div
+                class="
+                  d-flex
+                  justify-content-between
+                  align-content-center align
+                "
+              >
+                <button class="btn">اقرأ الأن</button>
+                <span class="mt-1"
+                  >200
+                  <i class="fas fa-eye"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="btn d-block mx-auto my-3">المزيد</button>
+      </div>
+    </section>
+    <!-- end articles section -->
+
+    <!-- our-clients section -->
+    <section id="our-clients">
+      <h2 class="text-center pb-4">عملاء نفتخر بهم</h2>
+      <div class="our-clients-bg d-flex align-items-center py-5">
+        <div class="container">
+          <div class="row">
+            <div class="owl-carousel owl-theme our-clients-carousel">
+              <div class="item">
+                <img src="assets/images/smart.png" />
+              </div>
+              <div class="item">
+                <img src="assets/images/one.png" />
+              </div>
+              <div class="item">
+                <img src="assets/images/elnesr.png" />
+              </div>
+              <div class="item">
+                <img src="assets/images/dokan.png" />
+              </div>
+              <div class="item">
+                <img src="assets/images/smart.png" />
+              </div>
+              <div class="item">
+                <img src="assets/images/one.png" />
+              </div>
+              <div class="item">
+                <img src="assets/images/elnesr.png" />
+              </div>
+              <div class="item">
+                <img src="assets/images/dokan.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end our-clients section -->
+
+    <!-- footer section -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="assets/images/footer-vec.jpg" alt="" />
+          </div>
+          <div class="col-lg-6 pt-5">
+            <img src="assets/images/footer-logo3.png" alt="" />
+            <p class="my-4 ms-1">المنصورة-حى الجامعه-تقسيم الزعفران</p>
+            <p class="pt-2 ms-3">
+              <i class="fab fa-whatsapp"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-github"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer section -->
   </body>
 </html>

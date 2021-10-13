@@ -1,13 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400&display=swap");
 
 body {
   font-family: "Cairo", sans-serif;
   font-weight: 400;
-}
-
-h1,
-h2 {
-  font-weight: 700;
 }
 
 img {
@@ -27,13 +22,12 @@ h2::after {
 }
 
 .card {
-  padding: 20px 5px;
+  padding: 20px 15px;
   border: 1px solid #e7e2e2;
   border-radius: 20px;
   text-align: center;
   background-color: #fff;
-  width: 30%;
-  margin: 1.6%;
+  margin-bottom: 25px;
 }
 
 .card img {
@@ -42,15 +36,39 @@ h2::after {
 }
 
 .card p {
-  width: 300px;
+  max-width: 300px;
   margin: auto;
 }
 
 .card h3 {
   color: #3aade6;
   font-size: 16px;
-  font-weight: 400;
   margin: 20px 0 15px 0;
+}
+
+.btn {
+  border-radius: 40px;
+  padding: 10px 75px;
+  background-color: #233142;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+  font-size: 18px;
+  box-shadow: 5px 5px 15px 0px rgb(0, 0, 0, 0.4);
+}
+
+.btn:hover {
+  background-color: #384f6b;
+  color: #fff;
+}
+
+.owl-dots {
+  display: none;
+}
+
+.owl-prev span,
+.owl-next span {
+  font-size: 30px;
+  padding: 5px 20px;
 }
 
 /* navbar */
@@ -90,12 +108,19 @@ header {
 
 .hero-bg {
   background: url("../images/header-side.jpg") no-repeat;
+  /* background-size: contain; */
   max-width: 100%;
   min-height: 100vh;
 }
 
 .hero-bg h1 {
   margin-top: 200px;
+}
+
+@media only screen and (max-width: 375px) {
+  .hero-bg {
+    min-height: 75vh;
+  }
 }
 /* end hero section */
 
@@ -105,11 +130,8 @@ header {
 }
 
 .about-us-text p {
+  padding: 25px;
   font-size: 24px;
-}
-
-.row {
-  --bs-gutter-x: 0;
 }
 /* end about-us section */
 
@@ -117,5 +139,116 @@ header {
 .services-bg {
   min-height: 500px;
   background: url("../images/we-offer.png") no-repeat;
+  background-size: cover;
+}
+
+#services .card img {
+  width: 150px;
+  margin: auto;
+}
+
+#services .card {
+  padding: 30px 15px;
 }
 /* end services section */
+
+/* our-work section */
+.our-work-bg {
+  min-height: 500px;
+  background: url("../images/bg30-Ar1web.gif");
+}
+
+#our-work .card {
+  padding: 0;
+  box-shadow: 5px 5px 15px 0px rgb(0, 0, 0, 0.4);
+}
+
+#our-work .card img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+#our-work .card h3 {
+  color: #333;
+  font-size: 20px;
+  margin: 24px 0;
+}
+/* end our-work section */
+
+/* articles section */
+#articles .card {
+  padding: 0;
+  max-width: 400px;
+  box-shadow: 5px 5px 15px 0px rgb(0, 0, 0, 0.4);
+}
+
+#articles .card img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+#articles .card p {
+  color: #333;
+  font-size: 18px;
+  margin: 24px auto;
+  max-width: 350px;
+}
+
+#articles .card i {
+  font-size: 16px;
+  margin-left: 25px;
+  margin-right: 5px;
+}
+
+#articles .card .btn {
+  border-radius: 40px;
+  padding: 5px 20px;
+  font-size: 16px;
+  margin: 0 25px 20px 0;
+  box-shadow: none;
+}
+/* end articles section */
+
+/* our-clients section */
+.our-clients-bg {
+  min-height: 500px;
+  background: url("../images/our-client-bg.jpg") no-repeat;
+  background-size: cover;
+}
+
+#our-clients img {
+  max-width: 150px;
+  margin: auto;
+}
+
+#our-clients .row > div {
+  text-align: center;
+}
+
+#our-clients {
+  padding-bottom: 0;
+}
+/* end our-clients section */
+
+/* footer section */
+footer {
+  padding: 75px;
+  background: url("../images/footer.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+footer img {
+  max-width: 250px;
+}
+
+footer p:first-of-type {
+  font-size: 18px;
+}
+
+footer i {
+  font-size: 28px;
+  margin-left: 24px;
+}
+/* end footer section */
